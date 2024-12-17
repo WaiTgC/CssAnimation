@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CE</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			height: 100vh;
+			background-color: gray;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.card{
+			width: 300px;
+			height: 400px;
+			background: #000;
+            position: relative;
+			box-shadow: 0 30px 30px #000;
+			overflow: hidden;
+
+
+		}
+		div.forcontent{
+			color: red;
+			width: 80%;
+			height: 80px;
+			text-align: center;
+			background: #fff;
+
+			position: absolute;
+			bottom: 0;
+			left: 10%;
+
+			transition: 1s;
+		}
+
+		.card:hover .forcontent{
+			width: 100%;
+			height: 100%;
+			left: 0;
+		}
+
+		.forcontent p{
+			width: 80%;
+			font-size: 18px;
+			margin: 10px auto;
+
+			opacity: 0;
+			transition: all 0.5s;
+
+		}
+		.card:hover p{
+			opacity: 1;
+			transition-delay: 0.5s;
+		}
+
+		.content h3{
+			font-size: 23px;
+			text-transform: uppercase;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="card">
+		<div class="imagebox">
+			<img />
+		</div>
+		<div class="forcontent">
+			<h3>Today Special</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

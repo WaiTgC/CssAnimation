@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LE</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			height: 100vh;
+			background-color: cyan;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+
+		}
+
+		ol{
+			list-style-type: none;
+			width: 200px;
+			height: 10px;
+			background-color: black;
+
+			display: flex;
+		}
+
+		li{
+           width: 20px;
+           height: 20px;
+           background-color: red;
+           border-radius: 50%;
+           
+           margin: -20px 10px;
+           /*animation-name: anidee;
+           animation-duration: 1s;
+           animation-timing-function: linear;
+           animation-iteration-count: infinite;*/
+           animation: anidee 1s linear infinite;
+
+           
+		}
+
+		@keyframes anidee{
+			0%{
+				transform: translateY(0px);
+			}
+
+			50%{
+				transform: translateY(-100px);
+			}
+            100%{
+            	transform: translateY(0px);
+            }
+
+		}
+
+		ol li:nth-child(1){
+			animation-delay: 0.1s;
+		}
+        ol li:nth-child(2){
+        	animation-delay: 0.02s;
+        }
+        ol li:nth-child(3){
+        	animation-delay: 0.1s;
+        }
+        ol li:nth-child(4){
+           animation-delay: 0.02s;
+        }
+
+	</style>
+</head>
+<body>
+	
+	<ol>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+</body>
+</html>
